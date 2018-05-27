@@ -8,8 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		43669D8520B4CC9600839A9D /* AbsNet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43669D7B20B4CC9600839A9D /* AbsNet.framework */; };
-		43669D8A20B4CC9600839A9D /* AbsNetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43669D8920B4CC9600839A9D /* AbsNetTests.swift */; };
 		43669D8C20B4CC9600839A9D /* AbsNet.h in Headers */ = {isa = PBXBuildFile; fileRef = 43669D7E20B4CC9600839A9D /* AbsNet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43669D9820B4CF3700839A9D /* AbsNetConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43669D9720B4CF3700839A9D /* AbsNetConfiguration.swift */; };
+		43669D9A20B4D06900839A9D /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43669D9920B4D06900839A9D /* ApiService.swift */; };
+		43669D9C20B4D0C200839A9D /* ApiUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43669D9B20B4D0C200839A9D /* ApiUseCase.swift */; };
+		43669D9E20B4D11F00839A9D /* AbsNetMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43669D9D20B4D11F00839A9D /* AbsNetMethod.swift */; };
+		43669DA020B4D17500839A9D /* AbsNetError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43669D9F20B4D17500839A9D /* AbsNetError.swift */; };
+		43669DA220B4D1A800839A9D /* AbsNetHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43669DA120B4D1A800839A9D /* AbsNetHeader.swift */; };
+		43669DA420B4D22200839A9D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43669DA320B4D22200839A9D /* Extensions.swift */; };
+		43E30E4120BAD03B00EDC4CC /* AbsNet.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 43669D7B20B4CC9600839A9D /* AbsNet.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,13 +29,32 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		43E30E4020BACF8E00EDC4CC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "~/Dev/iOS/AbsNet/SampleAbsNet";
+			dstSubfolderSpec = 0;
+			files = (
+				43E30E4120BAD03B00EDC4CC /* AbsNet.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		43669D7B20B4CC9600839A9D /* AbsNet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AbsNet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		43669D7E20B4CC9600839A9D /* AbsNet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbsNet.h; sourceTree = "<group>"; };
 		43669D7F20B4CC9600839A9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43669D8420B4CC9600839A9D /* AbsNetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AbsNetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		43669D8920B4CC9600839A9D /* AbsNetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsNetTests.swift; sourceTree = "<group>"; };
 		43669D8B20B4CC9600839A9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43669D9720B4CF3700839A9D /* AbsNetConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsNetConfiguration.swift; sourceTree = "<group>"; };
+		43669D9920B4D06900839A9D /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		43669D9B20B4D0C200839A9D /* ApiUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiUseCase.swift; sourceTree = "<group>"; };
+		43669D9D20B4D11F00839A9D /* AbsNetMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsNetMethod.swift; sourceTree = "<group>"; };
+		43669D9F20B4D17500839A9D /* AbsNetError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsNetError.swift; sourceTree = "<group>"; };
+		43669DA120B4D1A800839A9D /* AbsNetHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsNetHeader.swift; sourceTree = "<group>"; };
+		43669DA320B4D22200839A9D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +99,13 @@
 			children = (
 				43669D7E20B4CC9600839A9D /* AbsNet.h */,
 				43669D7F20B4CC9600839A9D /* Info.plist */,
+				43669D9720B4CF3700839A9D /* AbsNetConfiguration.swift */,
+				43669D9920B4D06900839A9D /* ApiService.swift */,
+				43669D9B20B4D0C200839A9D /* ApiUseCase.swift */,
+				43669D9D20B4D11F00839A9D /* AbsNetMethod.swift */,
+				43669D9F20B4D17500839A9D /* AbsNetError.swift */,
+				43669DA120B4D1A800839A9D /* AbsNetHeader.swift */,
+				43669DA320B4D22200839A9D /* Extensions.swift */,
 			);
 			path = AbsNet;
 			sourceTree = "<group>";
@@ -80,7 +113,6 @@
 		43669D8820B4CC9600839A9D /* AbsNetTests */ = {
 			isa = PBXGroup;
 			children = (
-				43669D8920B4CC9600839A9D /* AbsNetTests.swift */,
 				43669D8B20B4CC9600839A9D /* Info.plist */,
 			);
 			path = AbsNetTests;
@@ -108,6 +140,7 @@
 				43669D7720B4CC9600839A9D /* Frameworks */,
 				43669D7820B4CC9600839A9D /* Headers */,
 				43669D7920B4CC9600839A9D /* Resources */,
+				43E30E4020BACF8E00EDC4CC /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -143,7 +176,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Santiago Franco";
 				TargetAttributes = {
 					43669D7A20B4CC9600839A9D = {
@@ -197,6 +230,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43669DA020B4D17500839A9D /* AbsNetError.swift in Sources */,
+				43669D9E20B4D11F00839A9D /* AbsNetMethod.swift in Sources */,
+				43669D9C20B4D0C200839A9D /* ApiUseCase.swift in Sources */,
+				43669D9A20B4D06900839A9D /* ApiService.swift in Sources */,
+				43669DA220B4D1A800839A9D /* AbsNetHeader.swift in Sources */,
+				43669D9820B4CF3700839A9D /* AbsNetConfiguration.swift in Sources */,
+				43669DA420B4D22200839A9D /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,7 +244,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43669D8A20B4CC9600839A9D /* AbsNetTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +272,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -240,6 +280,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -293,6 +334,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -300,6 +342,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -380,6 +423,7 @@
 		43669D9320B4CC9600839A9D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CA2AKZS8UU;
 				INFOPLIST_FILE = AbsNetTests/Info.plist;
@@ -394,6 +438,7 @@
 		43669D9420B4CC9600839A9D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CA2AKZS8UU;
 				INFOPLIST_FILE = AbsNetTests/Info.plist;

@@ -1,0 +1,11 @@
+framework module AbsNet {
+  umbrella header "AbsNet.h"
+
+  export *
+  module * { export * }
+}
+
+module AbsNet.Swift {
+    header "AbsNet-Swift.h"
+    requires objc
+}

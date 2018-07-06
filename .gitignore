@@ -19,6 +19,8 @@ DerivedData/
 *.perspectivev3
 !default.perspectivev3
 xcuserdata/
+AbsNet.xcodeproj/project.xcworkspace/xcshareddata/
+SampleAbsNet/SampleAbsNet.xcodeproj/project.xcworkspace/xcshareddata/
 
 ## Other
 *.moved-aside
